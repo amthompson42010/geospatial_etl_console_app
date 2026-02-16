@@ -1,0 +1,54 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Central Park",
+          "type": "park",
+          "city": "New York"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-73.9819, 40.7681],
+              [-73.9580, 40.8006],
+              [-73.9498, 40.7968],
+              [-73.9737, 40.7642],
+              [-73.9819, 40.7681]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Times Square",
+          "type": "square",
+          "city": "New York"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9855, 40.7580]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hudson River",
+          "type": "river",
+          "city": "New York"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [-74.0104, 40.7071],
+            [-74.0170, 40.7397],
+            [-74.0180, 40.7612]
+          ]
+        }
+      }
+    ]
+  }
+  
