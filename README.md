@@ -1,0 +1,1 @@
+This project turns geojson data from either a file or a database and transforms the data and loads the transformation into a parquet file.
