@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexander Thompson – Resume</title>
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 10.5pt;
+      line-height: 1.45;
+      color: #1a1a1a;
+      background: #fff;
+    }
+
+    a { color: #1a4b8c; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Page wrapper ── */
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 36px 44px 40px;
+    }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 2.5px solid #1a4b8c;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+
+    header h1 {
+      font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 24pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #0d2f5e;
+    }
+
+    header .location {
+      font-size: 9.5pt;
+      color: #555;
+      margin-top: 2px;
+    }
+
+    header .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      margin-top: 6px;
+      font-size: 9.5pt;
+      font-family: "Arial", sans-serif;
+    }
+
+    header .contact-row span::before {
+      content: "";
+    }
+
+    /* ── Section titles ── */
+    .section {
+      margin-top: 16px;
+    }
+
+    .section-title {
+      font-family: "Arial", "Helvetica", sans-serif;
+      font-size: 10pt;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #1a4b8c;
+      border-bottom: 1px solid #c2cfe0;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Summary ── */
+    .summary p {
+      font-size: 10pt;
+    }
+
+    /* ── Two-column grid (skills / certs / languages) ── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0 20px;
+    }
+
+    .col-block h3 {
+      font-family: "Arial", sans-serif;
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    .col-block ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .col-block ul li {
+      font-size: 9.5pt;
+      padding: 1px 0;
+      color: #2a2a2a;
+    }
+
+    .col-block ul li::before {
+      content: "▸ ";
+      color: #1a4b8c;
+      font-size: 8pt;
+    }
+
+    /* ── Experience entries ── */
+    .job {
+      margin-bottom: 12px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 2px;
+    }
+
+    .job-title {
+      font-family: "Arial", sans-serif;
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: #0d2f5e;
+    }
+
+    .job-date {
+      font-family: "Arial", sans-serif;
+      font-size: 9pt;
+      color: #555;
+      white-space: nowrap;
+    }
+
+    .job-company {
+      font-family: "Arial", sans-serif;
+      font-size: 9.5pt;
+      font-style: italic;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .job ul {
+      padding-left: 14px;
+      margin-top: 4px;
+    }
+
+    .job ul li {
+      font-size: 9.5pt;
+      margin-bottom: 3px;
+      color: #1a1a1a;
+    }
+
+    /* ── Education ── */
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .edu-school {
+      font-family: "Arial", sans-serif;
+      font-weight: 700;
+      font-size: 10.5pt;
+      color: #0d2f5e;
+    }
+
+    .edu-date {
+      font-family: "Arial", sans-serif;
+      font-size: 9pt;
+      color: #555;
+    }
+
+    .edu-degree {
+      font-family: "Arial", sans-serif;
+      font-size: 9.5pt;
+      color: #333;
+    }
+
+    /* ── Print styles ── */
+    @media print {
+      @page {
+        size: letter;
+        margin: 18mm 15mm 18mm 15mm;
+      }
+
+      body { font-size: 10pt; }
+
+      .page {
+        padding: 0;
+        max-width: 100%;
+      }
+
+      a { color: #1a4b8c !important; }
+
+      .job { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ══ HEADER ══ -->
+  <header>
+    <h1>Alexander Thompson</h1>
+    <div class="location">Mobile, Alabama, United States</div>
+    <div class="contact-row">
+      <span>📧 <a href="mailto:amthompson42010@gmail.com">amthompson42010@gmail.com</a></span>
+      <span>🔗 <a href="https://www.linkedin.com/in/amthompson42010" target="_blank">linkedin.com/in/amthompson42010</a></span>
+      <span>💻 <a href="https://github.com/amthompson42010" target="_blank">github.com/amthompson42010</a></span>
+    </div>
+  </header>
+
+  <!-- ══ SUMMARY ══ -->
+  <section class="section summary">
+    <div class="section-title">Professional Summary</div>
+    <p>
+      Experienced Software Developer and Website Designer with a demonstrated history of delivering complex,
+      mission-critical applications for federal government clients. Skilled in JavaScript, React.js, Golang,
+      Next.js, Python, C, C++, and Java. Proven expertise in cloud-based data processing, RESTful API
+      development, geospatial systems, machine learning pipelines, and full-stack application architecture.
+    </p>
+  </section>
+
+  <!-- ══ SKILLS / LANGUAGES / CERTIFICATIONS ══ -->
+  <section class="section">
+    <div class="section-title">Skills &amp; Qualifications</div>
+    <div class="two-col">
+
+      <div class="col-block">
+        <h3>Top Skills</h3>
+        <ul>
+          <li>Go (Programming Language)</li>
+          <li>JavaScript / TypeScript</li>
+          <li>React.js &amp; Next.js</li>
+          <li>Python</li>
+          <li>Web Development</li>
+          <li>Cloud Technologies (Azure, Databricks)</li>
+          <li>API Development</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+
+      <div class="col-block">
+        <h3>Certifications</h3>
+        <ul>
+          <li>Microsoft Certified: Azure Fundamentals</li>
+          <li>CompTIA Security+</li>
+          <li>Go (Basic) – HackerRank</li>
+          <li>SQL (Basic) – HackerRank</li>
+          <li>Java (Intermediate) – HackerRank</li>
+        </ul>
+      </div>
+
+      <div class="col-block">
+        <h3>Languages</h3>
+        <ul>
+          <li>English (Native)</li>
+          <li>Spanish</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section class="section">
+    <div class="section-title">Professional Experience</div>
+
+    <!-- Job 1 -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Software Developer III</span>
+        <span class="job-date">October 2016 – February 2025</span>
+      </div>
+      <div class="job-company">UICGS / Bowhead Family of Companies &nbsp;·&nbsp; Mobile, Alabama</div>
+      <ul>
+        <li>Employed full time as a Software Developer contracted to develop enterprise applications for the
+            United States Army Corps of Engineers (USACE).</li>
+        <li>Served as Lead Developer on the Shoreline Management (SLM) project, utilizing React, Azure,
+            Node.js, C# .NET, and SQL.</li>
+        <li>Architected and implemented an Azure AD authentication system for React Web Applications,
+            enforcing secure, role-based access control across USACE platforms.</li>
+        <li>Migrated large-scale datasets to Databricks, building cloud-based data processing pipelines
+            that significantly reduced query response times and enabled faster analytics for dredging
+            operations.</li>
+        <li>Architected and developed a RESTful API for dredge cycle management, streamlining operational
+            workflows and providing real-time data access to field teams and stakeholders.</li>
+        <li>Created a Machine Learning environment in Databricks to analyze grain sizes for sand using
+            Python with TensorFlow, Keras, and Scikit-learn; leveraged pandas and NumPy for data
+            manipulation and mathematical computation.</li>
+        <li>Served as Lead Developer on USACE's Operations and Dredging Endangered Species System (ODESS),
+            enabling live-tracking of endangered species incidents during dredging operations to reduce
+            environmental impact.</li>
+        <li>Served as a developer on USACE's DQM Viewer, building a system for live-tracking of dredging
+            activity.</li>
+        <li>Serving as Lead Developer on the Joint Airborne Lidar Bathymetry Technical Center of Expertise
+            (JALBTCX) project.</li>
+        <li>Built and deployed a universal React application and Elasticsearch solution to the cloud;
+            created a new API from the ground up using Node.js, ES6, TypeScript, Webpack, and Oracle;
+            maintained existing C# API and AngularJS/HTML/CSS front-end.</li>
+        <li>Collaborated directly with GIS developers to ensure accurate spatial coordinates for incidents
+            and operations.</li>
+        <li>Served as Chief Graphics Designer for ODESS, modernizing the web presence using Google's
+            Material Design guidelines.</li>
+      </ul>
+    </div>
+
+    <!-- Job 2 -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Website Designer</span>
+        <span class="job-date">April 2013 – January 2021</span>
+      </div>
+      <div class="job-company">Tuscaloosa Medical Society &nbsp;·&nbsp; Tuscaloosa, Alabama</div>
+      <ul>
+        <li>Designed and developed a responsive static website for the Tuscaloosa County Medical Society
+            (<em>tcmsdocs.org</em>) using HTML, CSS, jQuery, and JavaScript.</li>
+      </ul>
+    </div>
+
+    <!-- Job 3 -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Owner &amp; Lead Programmer</span>
+        <span class="job-date">September 2014 – January 2018</span>
+      </div>
+      <div class="job-company">Game Age Creation, LLC &nbsp;·&nbsp; Tuscaloosa, Alabama</div>
+      <ul>
+        <li>Founded and directed a game design studio focused on console game development.</li>
+        <li>Developed a console game for PlayStation 4 and Steam using Unreal Engine 4 and C++.</li>
+        <li>Produced marketing and design assets with Adobe Creative Suite; managed character design in
+            Blender.</li>
+        <li>Oversaw company website development and maintained comprehensive game design documentation.</li>
+      </ul>
+    </div>
+
+    <!-- Job 4 -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Student C# Developer</span>
+        <span class="job-date">May 2014 – August 2016</span>
+      </div>
+      <div class="job-company">Center for Advanced Public Safety &nbsp;·&nbsp; Tuscaloosa, Alabama</div>
+      <ul>
+        <li>Developed RESTful web applications for government agencies using C#, ASP.NET MVC, Microsoft Web
+            API, and Entity Framework.</li>
+      </ul>
+    </div>
+
+    <!-- Job 5 -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Front Desk Associate</span>
+        <span class="job-date">August 2010 – August 2014</span>
+      </div>
+      <div class="job-company">UA Rodgers Library, University of Alabama &nbsp;·&nbsp; Tuscaloosa, Alabama</div>
+      <ul>
+        <li>Circulated books, periodicals, and reference materials for library patrons.</li>
+        <li>Provided technical support including computer-to-TV and SMART board connectivity assistance.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- ══ EDUCATION ══ -->
+  <section class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-header">
+      <span class="edu-school">The University of Alabama</span>
+      <span class="edu-date">August 2010 – August 2023</span>
+    </div>
+    <div class="edu-degree">Bachelor of Arts (B.A.) &nbsp;·&nbsp; Criminology</div>
+  </section>
+
+</div>
+</body>
+</html>
